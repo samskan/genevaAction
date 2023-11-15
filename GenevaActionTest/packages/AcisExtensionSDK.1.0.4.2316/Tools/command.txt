@@ -1,0 +1,1 @@
+AcisSMEClientManager.exe -Operation:LoadExtensionOperation -Arg:1 -Arg:C:\Users\shilpaprasad\source\repos\GenevaActionTest\GenevaActionTest\bin\Debug\GenevaActionTest.dll -Arg:C:\Users\shilpaprasad\source\repos\GenevaActionTest\GenevaActionTest.config

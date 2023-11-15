@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\AcisExtensionSDK.1.0.4.2316\build\acisextensionsdk.props" Condition="Exists('..\packages\AcisExtensionSDK.1.0.4.2316\build\acisextensionsdk.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4AC5E094-DB30-4CF5-A8DF-AAD3DFD2FF78}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GenevaActionTest</RootNamespace>
+    <AssemblyName>GenevaActionTest</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AcisCommon, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\AcisExtensionSDKx64.1.0.4.310\lib\net45\AcisCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="AcisCommonContracts, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\AcisExtensionSDKx64.1.0.4.310\lib\net45\AcisCommonContracts.dll</HintPath>
+    </Reference>
+    <Reference Include="AcisSME, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\AcisExtensionSDKx64.1.0.4.310\lib\net45\AcisSME.dll</HintPath>
+    </Reference>
+    <Reference Include="Cfx.Assert, Version=132.300.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDK.1.0.4.2316\lib\net462\Cfx.Assert.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonUtilities, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\AcisExtensionSDKx64.1.0.4.310\lib\net45\CommonUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="DstsAuthenticationLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b53a8e41a8ed1467, processorArchitecture=AMD64">
+      <HintPath>..\packages\AcisExtensionSDK.1.0.4.2316\lib\net462\DstsAuthenticationLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Azure.SecurityResponse.Client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDK.1.0.4.2316\lib\net462\Microsoft.Azure.SecurityResponse.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Azure.SecurityResponse.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDK.1.0.4.2316\lib\net462\Microsoft.Azure.SecurityResponse.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Edm, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDKx64.1.0.4.310\lib\net45\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDKx64.1.0.4.310\lib\net45\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Services.Client, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDKx64.1.0.4.310\lib\net45\Microsoft.Data.Services.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Exchange.WebServices, Version=14.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDKx64.1.0.4.310\lib\net45\Microsoft.Exchange.WebServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDK.1.0.4.2316\lib\net462\Microsoft.IdentityModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=5.0.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDKx64.1.0.4.310\lib\net45\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.WindowsAzure.TransientFaultHandling, Version=5.1.1209.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDKx64.1.0.4.310\lib\net45\Microsoft.Practices.EnterpriseLibrary.WindowsAzure.TransientFaultHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDKx64.1.0.4.310\lib\net45\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.TransientFaultHandling.Core, Version=5.1.1209.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDKx64.1.0.4.310\lib\net45\Microsoft.Practices.TransientFaultHandling.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDKx64.1.0.4.310\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDKx64.1.0.4.310\lib\net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDKx64.1.0.4.310\lib\net45\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception.Configuration, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDKx64.1.0.4.310\lib\net45\Microsoft.Practices.Unity.Interception.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.ApplicationManagement, Version=0.2.0.0, Culture=neutral, PublicKeyToken=365143bb27e7ac8b, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDKx64.1.0.4.310\lib\net45\Microsoft.WindowsAzure.ApplicationManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.CloudServiceManagement, Version=0.2.0.0, Culture=neutral, PublicKeyToken=365143bb27e7ac8b, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDKx64.1.0.4.310\lib\net45\Microsoft.WindowsAzure.CloudServiceManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Management, Version=0.2.0.0, Culture=neutral, PublicKeyToken=365143bb27e7ac8b, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDKx64.1.0.4.310\lib\net45\Microsoft.WindowsAzure.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.ResourceManagement, Version=0.2.0.0, Culture=neutral, PublicKeyToken=365143bb27e7ac8b, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDKx64.1.0.4.310\lib\net45\Microsoft.WindowsAzure.ResourceManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Security.Authentication, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDK.1.0.4.2316\lib\net462\Microsoft.WindowsAzure.Security.Authentication.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Security.Authentication.Contracts, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDK.1.0.4.2316\lib\net462\Microsoft.WindowsAzure.Security.Authentication.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Security.Authentication.Helpers.PassiveAuthHelper, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDK.1.0.4.2316\lib\net462\Microsoft.WindowsAzure.Security.Authentication.Helpers.PassiveAuthHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Security.Authentication.Logging, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDK.1.0.4.2316\lib\net462\Microsoft.WindowsAzure.Security.Authentication.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Security.CredentialsManagement.Client, Version=2.17.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDK.1.0.4.2316\lib\net462\Microsoft.WindowsAzure.Security.CredentialsManagement.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Security.CredentialsManagement.StorageHelper, Version=2.17.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDK.1.0.4.2316\lib\net462\Microsoft.WindowsAzure.Security.CredentialsManagement.StorageHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.ServiceManagement.InternalClient, Version=0.2.0.0, Culture=neutral, PublicKeyToken=365143bb27e7ac8b, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDKx64.1.0.4.310\lib\net45\Microsoft.WindowsAzure.ServiceManagement.InternalClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.ServiceRuntime, Version=2.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDKx64.1.0.4.310\lib\net45\Microsoft.WindowsAzure.ServiceRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage, Version=2.1.0.3, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDKx64.1.0.4.310\lib\net45\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Wapd.Acis.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b53a8e41a8ed1467, processorArchitecture=AMD64">
+      <HintPath>..\packages\AcisExtensionSDK.1.0.4.2316\lib\net462\Microsoft.WindowsAzure.Wapd.Acis.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Wapd.Mats.SIECommunication, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\AcisExtensionSDKx64.1.0.4.310\lib\net45\Microsoft.WindowsAzure.Wapd.Mats.SIECommunication.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDK.1.0.4.2316\lib\net462\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PackageMgrx64, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\AcisExtensionSDKx64.1.0.4.310\lib\net45\PackageMgrx64.exe</HintPath>
+    </Reference>
+    <Reference Include="RDFE.FrontEnd.Client, Version=0.2.0.0, Culture=neutral, PublicKeyToken=365143bb27e7ac8b, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDKx64.1.0.4.310\lib\net45\RDFE.FrontEnd.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="SecretData, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\AcisExtensionSDKx64.1.0.4.310\lib\net45\SecretData.dll</HintPath>
+    </Reference>
+    <Reference Include="Shared, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\AcisExtensionSDKx64.1.0.4.310\lib\net45\Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="StashProxy, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDKx64.1.0.4.310\lib\net45\StashProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDKx64.1.0.4.310\lib\net45\System.ComponentModel.Composition.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDK.1.0.4.2316\lib\net462\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Packaging, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDK.1.0.4.2316\lib\net462\System.IO.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Pkcs, Version=6.0.0.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDK.1.0.4.2316\lib\net462\System.Security.Cryptography.Pkcs.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Primitives, Version=4.10.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDK.1.0.4.2316\lib\net462\System.ServiceModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Spatial, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDKx64.1.0.4.310\lib\net45\System.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WapdPackaging, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\AcisExtensionSDKx64.1.0.4.310\lib\net45\WapdPackaging.dll</HintPath>
+    </Reference>
+    <Reference Include="WapdSMEClientManager_x64, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\AcisExtensionSDKx64.1.0.4.310\lib\net45\WapdSMEClientManager_x64.exe</HintPath>
+    </Reference>
+    <Reference Include="WindowsAzureEventSource, Version=2.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDKx64.1.0.4.310\lib\net45\WindowsAzureEventSource.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsAzureTelemetryEvents, Version=2.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\AcisExtensionSDKx64.1.0.4.310\lib\net45\WindowsAzureTelemetryEvents.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GreetingsOpetation.cs" />
+    <Compile Include="GenevaActionOperationGroup.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\AcisExtensionSDK.1.0.4.2316\build\acisextensionsdk.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\AcisExtensionSDK.1.0.4.2316\build\acisextensionsdk.props'))" />
+    <Error Condition="!Exists('..\packages\AcisExtensionSDK.1.0.4.2316\build\acisextensionsdk.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\AcisExtensionSDK.1.0.4.2316\build\acisextensionsdk.targets'))" />
+  </Target>
+  <Import Project="..\packages\AcisExtensionSDK.1.0.4.2316\build\acisextensionsdk.targets" Condition="Exists('..\packages\AcisExtensionSDK.1.0.4.2316\build\acisextensionsdk.targets')" />
+</Project>

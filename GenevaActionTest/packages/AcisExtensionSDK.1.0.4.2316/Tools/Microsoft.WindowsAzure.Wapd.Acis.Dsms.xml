@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.WindowsAzure.Wapd.Acis.Dsms</name>
+    </assembly>
+    <members>
+        <member name="M:Microsoft.WindowsAzure.Wapd.Acis.Dsms.DsmsClientHelper.GetSASTokenForStorageAccount(Microsoft.WindowsAzure.Wapd.Acis.AcisCommonContracts.Storage.StorageAccountIdentity,System.String)">
+            <summary>
+            Gets the SAS token for a given StorageAccount type from its respective storageCredential
+            </summary>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Wapd.Acis.Dsms.DsmsClientHelper.GetConnectionStringForStorageAccount(Microsoft.WindowsAzure.Wapd.Acis.AcisCommonContracts.Storage.StorageAccountIdentity,System.String)">
+            <summary>
+            Gets the connectionString for a given StorageAccount type from its respective storageCredential.
+            Incase of failure to fetch connectionString, returns null.
+            </summary>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Wapd.Acis.Dsms.DsmsClientHelper.GetManagedCertificate(System.String)">
+            <summary>
+            Gets a manage certificate from DSMS
+            </summary>
+            <param name="sourceLocation">The source location of the certificate in DSMS</param>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Wapd.Acis.Dsms.DsmsClientHelper.GetManagedCertificate(System.String,Microsoft.WindowsAzure.Security.CredentialsManagement.Client.ManagedSecrets)">
+            <summary>
+            Gets a manage certificate from DSMS
+            </summary>
+            <param name="sourceLocation">The source location of the certificate in DSMS</param>
+            <param name="managedSecrets"></param>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Wapd.Acis.Dsms.DsmsClientHelper.GetManagedStorageSecret(System.String)">
+            <summary>
+            Gets a managed storage secret from dSMS
+            </summary>
+            <param name="configName">Name of the config specified in the cscfg</param>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Wapd.Acis.Dsms.DsmsClientHelper.GetManagedStorageSecret(System.String,Microsoft.WindowsAzure.Security.CredentialsManagement.Client.ManagedSecrets)">
+            <summary>
+            Gets a managed storage secret from dSMS
+            </summary>
+            <param name="configName">Name of the config specified in the cscfg</param>
+            <param name="managedSecrets">If you have your own version of the managedSecrets and would like to parse it instead of the current version</param>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Wapd.Acis.Dsms.DsmsClientHelper.GetManagedServiceIdentitySecret(System.String)">
+            <summary>
+            Gets the managed service identity from dSMS
+            </summary>
+            <param name="configName">Name of the config specified in the cscfg</param>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Wapd.Acis.Dsms.DsmsClientHelper.GetManagedServiceIdentitySecret(System.String,Microsoft.WindowsAzure.Security.CredentialsManagement.Client.ManagedSecrets)">
+            <summary>
+            Gets the managed service identity from dSMS
+            </summary>
+            <param name="configName">Name of the config specified in the cscfg</param>
+            <param name="managedSecrets">If you have your own version of the managedSecrets and would like to parse it instead of the current version</param>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Wapd.Acis.Dsms.DsmsClientHelper.GetAdHocSecret(System.String)">
+            <summary>
+            Gets the adhoc secret from dSMS
+            </summary>
+            <param name="configName">Name of the config specified in the cscfg</param>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Wapd.Acis.Dsms.DsmsClientHelper.GetAdHocSecret(System.String,Microsoft.WindowsAzure.Security.CredentialsManagement.Client.ManagedSecrets)">
+            <summary>
+            Gets the adhoc secret from dSMS
+            </summary>
+            <param name="configName">Name of the config specified in the cscfg</param>
+            <param name="managedSecrets">If you have your own version of the managedSecrets and would like to parse it instead of the current version</param>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Wapd.Acis.Dsms.DsmsClientHelper.GetManagedKey(System.String)">
+            <summary>
+            Gets a managed key from dSMS
+            </summary>
+            <param name="configName">Name of the config specified in the cscfg</param>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Wapd.Acis.Dsms.DsmsClientHelper.GetManagedKey(System.String,Microsoft.WindowsAzure.Security.CredentialsManagement.Client.ManagedSecrets)">
+            <summary>
+            Gets a managed key from dSMS
+            </summary>
+            <param name="configName">Name of the config specified in the cscfg</param>
+            <param name="managedSecrets">If you have your own version of the managedKey and would like to parse it instead of the current version</param>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Wapd.Acis.Dsms.DsmsClientHelper.GetPrimarySecondaryAdHocSecrets(System.String,System.String)">
+            <summary>
+            Gets a Primary and Secondary AdHocSecret from DSMS and order according to expiration.
+            </summary>
+            <param name="primarySecretKey">Primary Secret key to retrieve from DSMS</param>
+            <param name="secondarySecretKey">Secondary Secret key to retrieve from DSMS</param>
+            <returns>List of secrets.</returns>
+        </member>
+        <member name="M:Microsoft.WindowsAzure.Wapd.Acis.Dsms.DsmsClientHelper.FindCertificate(System.String,System.Security.Cryptography.X509Certificates.StoreLocation,System.Security.Cryptography.X509Certificates.StoreName)">
+            <summary>
+            This method is used to search for the cert installed on the box.
+            The reason is that GetManagedCertificate alone does not return the X509 object
+            </summary>
+            <param name="thumbprint">thumbprint of the certificate</param>
+            <param name="storeLocation">store location of the installed certificate</param>
+            <param name="storeName">store name of the installed certificate</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
